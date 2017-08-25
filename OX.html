@@ -1,0 +1,48 @@
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script src="OX.js" type="text/javascript"></script>
+<div ng-app="myOX" ng-controller="OX">
+	<!-- HEAD -->
+	<div>
+		<table style="width:150px;height:150px;text-align: center;table-layout:fixed">
+			<tr style = "height : 50px; weight : 150px">
+				<td ng-click = "go('A1')">
+					<span ng-show = "A1 != 'A1'">{{A1}}</span>
+				</td>
+				<td ng-click = "go('A2')">
+					<span ng-show = "A2 != 'A2'">{{A2}}</span>
+				</td>
+				<td ng-click = "go('A3')">
+					<span ng-show = "A3 != 'A3'">{{A3}}</span>
+				</td>
+			</tr>
+			<tr style = "height : 50px">
+				<td ng-click = "go('B1')">
+					<span ng-show = "B1 != 'B1'">{{B1}}</span>
+				</td>
+				<td ng-click = "go('B2')">
+					<span ng-show = "B2 != 'B2'">{{B2}}</span>
+				</td>
+				<td ng-click = "go('B3')">
+					<span ng-show = "B3 != 'B3'">{{B3}}</span>
+				</td>
+			</tr>
+			<tr style = "height : 50px">
+				<td ng-click = "go('C1')">
+					<span ng-show = "C1 != 'C1'">{{C1}}</span>
+				</td>
+				<td ng-click = "go('C2')">
+					<span ng-show = "C2 != 'C2'">{{C2}}</span>
+				</td>
+				<td ng-click = "go('C3')">
+					<span ng-show = "C3 != 'C3'">{{C3}}</span>
+				</td>
+			</tr>
+		</table>
+		<button ng-click = "init()">­«¨Ó</button><span>{{result}}</span>
+	</div>
+</div>
